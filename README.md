@@ -25,7 +25,7 @@ To build this site for local viewing or development:
     $ python setup.py develop
     $ pserve ./development.ini
 
-The site will then be available on your local machine at: [http://0.0.0.0:6543/](http://0.0.0.0:6543/)
+The site will then be available on your local machine at: [http://localhost:6543/](http://localhost:6543/)
 
 ## License
 This repository contains the code of:
