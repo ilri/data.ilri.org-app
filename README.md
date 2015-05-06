@@ -8,15 +8,11 @@ You can view the site at [https://data.ilri.org](https://data.ilri.org).
 ## Technology
 This site was built using:
 
-[Bootstrap](http://getbootstrap.com/), the HTML, CSS, and JS framework.
-
-[Font Awesome](http://fortawesome.github.io/Font-Awesome/), the The iconic font and CSS toolkit.
-
-[Pyramid](http://www.pylonsproject.org/), a web applications framework for Python.
-
-[Jinja2](http://jinja.pocoo.org/), a template engine for the Python programming language.
-
-[Fanstatic](http://www.fanstatic.org/), a Resource injection framework for Python.
+- [Bootstrap](http://getbootstrap.com/), the HTML, CSS, and JS framework.
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/), the The iconic font and CSS toolkit.
+- [Pyramid](http://www.pylonsproject.org/), a web applications framework for Python.
+- [Jinja2](http://jinja.pocoo.org/), a template engine for the Python programming language.
+- [Fanstatic](http://www.fanstatic.org/), a Resource injection framework for Python.
 
 
 ## Building and testing
@@ -33,11 +29,9 @@ To build this site for local viewing or development:
 The site will then be available on your local machine at: [http://0.0.0.0:6543/](http://0.0.0.0:6543/)
 
 ## License
-
 This repository contains the code of:
 
-[Bootstrap](http://getbootstrap.com) which is licensed under the [MIT license](https://raw.githubusercontent.com/twbs/bootstrap/master/LICENSE).
-
-[Font Awesome](http://fortawesome.github.io/Font-Awesome/) which is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html).
+- [Bootstrap](http://getbootstrap.com) which is licensed under the [MIT license](https://raw.githubusercontent.com/twbs/bootstrap/master/LICENSE).
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) which is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html).
 
 Otherwise, the contents of this application is [GPL V2](http://www.gnu.org/copyleft/gpl.html).
