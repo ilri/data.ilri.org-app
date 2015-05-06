@@ -34,4 +34,4 @@ This repository contains the code of:
 - [Bootstrap](http://getbootstrap.com) which is licensed under the [MIT license](https://raw.githubusercontent.com/twbs/bootstrap/master/LICENSE).
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) which is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html).
 
-Otherwise, the contents of this application is [GPL V2](http://www.gnu.org/copyleft/gpl.html).
+Otherwise, the contents of this application is [GPL v2.0](https://www.gnu.org/licenses/gpl-2.0.html).
