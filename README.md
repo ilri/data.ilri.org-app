@@ -1,5 +1,5 @@
 # data.ilri.org Web Application
-Search application behind the Landing page for ILRI's data resources.
+Search application behind the landing page for ILRI's data resources.
 
 ![dataDotILRIApp screenshot](/screenshot.png?raw=true "Screenshot")
 
@@ -9,11 +9,10 @@ You can view the site at [https://data.ilri.org](https://data.ilri.org).
 This site was built using:
 
 - [Bootstrap](http://getbootstrap.com/), the HTML, CSS, and JS framework.
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/), the The iconic font and CSS toolkit.
-- [Pyramid](http://www.pylonsproject.org/), a web applications framework for Python.
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/), the iconic font and CSS toolkit.
+- [Pyramid](http://www.pylonsproject.org/), a web application framework for Python.
 - [Jinja2](http://jinja.pocoo.org/), a template engine for the Python programming language.
-- [Fanstatic](http://www.fanstatic.org/), a Resource injection framework for Python.
-
+- [Fanstatic](http://www.fanstatic.org/), a resource injection framework for Python.
 
 ## Building and testing
 To build this site for local viewing or development:
