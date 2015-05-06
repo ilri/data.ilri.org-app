@@ -22,8 +22,8 @@ This site was built using:
 ## Building and testing
 To build this site for local viewing or development:
 
-    $ git clone https://github.com/ilri/dataDotILRIApp.git
-    $ cd dataDotILRIApp
+    $ git clone https://github.com/ilri/data.ilri.org-app.git
+    $ cd data.ilri.org-app
     $ virtualenv myVirtualEnv
     $ . ./myVirtualEnv/bin/activate
     $ pip install -r ./requirements.txt
