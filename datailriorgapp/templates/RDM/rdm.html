@@ -1,0 +1,55 @@
+{% extends "../page.html" %}
+
+{% block breadcrumbs %}
+    <li><a class="icon-home fa fa-home fa-lg" href="{{ request.route_url('home') }}"></a></li>
+    <li class="active" style="color: #000000">RDM</li>
+{% endblock breadcrumbs %}
+
+{%- block title -%}
+    Research Data Management at ILRI
+{%- endblock title -%}
+
+{%block page_title %}Research Data Management (RDM) at ILRI{% endblock page_title %}
+{%block page_desc %}ILRI manages its research data with a series of open source tools and relational databases.{% endblock page_desc %}
+{%block page_image %}
+    <div style="font-size: 150px;">
+        <i title="RDM" class="fa fa-database fa-lg" style="color: #702D3E"></i>
+    </div>
+{% endblock page_image %}
+
+{%- block page_content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>RDM documents</h2>
+            <p>Policies, processes and associated documents related to RDM</p>
+            <p><a class="btn btn-default" href="{{ request.route_url('rdmdocs') }}" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>META</h2>
+            <p>META is a toolbox for storing, curating and making available research data using MySQL databases as data repositories.</p>
+            <p><a class="btn btn-default" href="{{ request.route_url('meta') }}" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>ODK Tools</h2>
+            <p>ODK Tools is a toolbox for automating ODK data collection and storing data consistently in MySQL databases.</p>
+            <p><a class="btn btn-default" href="{{ request.route_url('odktools') }}" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>CSPro Tools</h2>
+            <p>CSPro Tools is a toolbox for automating CSPro data collection and storing data consistently in MySQL databases.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>CKAN Extensions</h2>
+            <p>ILRI uses <a href="http://ckan.org/" target="_blank">CKAN</a> for making available its data. We have created a series of extensions to connect CKAN directly to MySQL databases and convert research data into different formats.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>GIS tools</h2>
+            <p>ILRI manages it GIS data using a combination of <a href="http://www.esri.com/software/arcgis/geoportal" target="_blank">GeoPortal</a>, <a href="http://geoserver.org/" target="_blank">GeoServer</a> and <a href="http://postgis.net/" target="_blank">PostGIS</a>. These combination help us store, curate and make available GIS data using interoperable web services like WFS and WCS.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+{% endblock page_content %}

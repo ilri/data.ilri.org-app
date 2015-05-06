@@ -1,0 +1,57 @@
+html {
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #702D3E;
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: #e3d7d7;
+}
+
+.jumbotron h1 {
+    color: #333;
+}
+
+.jumbotron p {
+    color: #666;
+}
+
+.jumbotron a,
+.jumbotron a:visited,
+.jumbotron a:active,
+.jumbotron a:hover {
+    color: #702D3E;
+}
+
+.btn-default {
+    background-color: #e3d7d7;
+    color: #660000;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #e3c6c6;
+    color: #660000;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #ebebeb;
+}
+
+hr {
+    border-top: 1px solid #aaa;
+}
+
+footer p {
+    color: #aaa;
+}
+
+footer p a,
+footer p a:visited,
+footer p a:active,
+footer p a:hover {
+    color: #aaa;
+    text-decoration: none;
+}

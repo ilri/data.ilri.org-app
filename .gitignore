@@ -1,9 +1,13 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
 
 # C extensions
 *.so
+
+# Linux
+.directory
 
 # Distribution / packaging
 .Python
@@ -54,4 +58,4 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
-target/
+target/ 

@@ -1,0 +1,72 @@
+{% extends "page.html" %}
+
+{% block breadcrumbs %}
+    <li class="icon-home fa fa-home fa-lg" style="color: #000000"></li>
+{% endblock breadcrumbs %}
+
+{%block page_desc %}Information and access to ILRI's data, tools, and code. For more about ILRI's commitment to openness click <a href="https://www.ilri.org/open">here</a>.{% endblock page_desc %}
+
+{% block extra_content %}
+    <p></p>
+    <div class="row">
+        <form method="post" class="form-inline" role="form" action="{{ request.path }}">
+            <div class="form-group">
+                <label for="email" style="color: #000000">Search our resources:</label>
+                <input type="text" class="form-control" id="seach-content" name="seach-content">
+            </div>
+            <div class="checkbox">
+                <label style="color: #000000"><input type="checkbox" checked>Data</label>
+            </div>
+            <div class="checkbox">
+                <label style="color: #000000"><input type="checkbox" checked>Maps</label>
+            </div>
+            <div class="checkbox">
+                <label style="color: #000000"><input type="checkbox" checked>Tools</label>
+            </div>
+            <div class="checkbox">
+                <label style="color: #000000"><input type="checkbox" checked>Code</label>
+            </div>
+            <div class="checkbox">
+                <label style="color: #000000"><input type="checkbox" checked>Outputs</label>
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>
+    </div>
+{% endblock extra_content %}
+
+{%- block page_content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Data Portal</h2>
+            <p>The data portal makes ILRI's open access datasets globally available. The platform is also the main access point for data from the CGIAR Research Program on Livestock and Fish (CRP) and from other CGIAR research programs and centres as part of our cross-centre collaboration.</p>
+            <p><a class="btn btn-default" href="http://data.ilri.org/portal" title="ILRI data portal" role="button">Data portal &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Tools</h2>
+            <p>The tools portal provides metadata and documentation for a wide range of research tools used by the CGIAR and our partners. The portal also enables interaction among users and offers a platform for providing feedback on adaptation and use of the tools.</p>
+            <p><a class="btn btn-default" href="http://data.ilri.org/tools" title="ILRI tools portal" role="button">Tools portal &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Code</h2>
+            <p>Source code for a handful of ILRI projects is hosted on GitHub, promoting an open-by-default workflow and enabling community interaction. The code includes systems written in house as well as community-maintained open-source projects we use.</p>
+            <p><a class="btn btn-default" href="https://github.com/ilri" title="ILRI on GitHub" role="button">GitHub &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>GIS Portal</h2>
+            <p>The ILRI GIS portal provides access to web-based geospatial information and services. The portal contains both ILRI, hosted and publicly available spatial datasets that are discoverable, viewable and accessible by others.</p>
+            <p><a class="btn btn-default" href="http://data.ilri.org/geoportal/" title="ILRI geoportal" role="button">GIS portal &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Outputs</h2>
+            <p>CGSpace is a repository of agricultural research outputs and results produced by different parts of CGIAR and partners. It indexes reports, articles, press releases, presentations, videos, policy briefs and more.</p>
+            <p><a class="btn btn-default" href="https://cgspace.cgiar.org" title="CGSpace Home" role="button">CGSpace &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Data management tools</h2>
+            <p>ILRI manages its research data using a combination of relational databases and open source tools like ODK, CKAN and GeoServer.</p>
+            <p><a class="btn btn-default" href="{{ request.route_url('rdm') }}" title="RDM at ILRI" role="button">RDM at ILRI &raquo;</a></p>
+        </div>
+    </div>
+{% endblock page_content -%}

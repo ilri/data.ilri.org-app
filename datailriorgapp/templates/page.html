@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{%- block title -%}
+    Data resources at ILRI
+{%- endblock title -%}
+
+{%- block page -%}
+    {%- block header %}
+        {% include "header.html" %}
+    {% endblock header -%}
+
+    {%- block main_content %}
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+            <ul class="breadcrumb" style="background-color: #E3D7D7">
+                {% block breadcrumbs %}
+
+                {% endblock breadcrumbs %}
+            </ul>
+            <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <h1>{%block page_title %}Data resources at ILRI{% endblock page_title %}</h1>
+                        <p>{%block page_desc %}{% endblock page_desc %}</p>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        {%block page_image %}
+                            <img src="{{request.static_url('datailriorgapp:static/images/ilri-logo.png')}}" title="ILRI logo" class="img-responsive" style="max-width: 50%;">
+                        {% endblock page_image %}
+                    </div>
+                </div>
+                {% block extra_content %}
+
+                {% endblock extra_content %}
+            </div>
+        </div>
+        <div class="container">
+            {%- block page_content %}
+                Page content goes here
+            {% endblock page_content -%}
+        </div> <!-- /container -->
+    {% endblock main_content -%}
+
+    {%- block footer %}
+        {% include "footer.html" %}
+    {% endblock footer -%}
+{% endblock page -%}

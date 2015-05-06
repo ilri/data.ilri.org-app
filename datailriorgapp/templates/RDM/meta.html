@@ -1,0 +1,64 @@
+{% extends "../page.html" %}
+
+{% block breadcrumbs %}
+    <li><a class="icon-home fa fa-home fa-lg" href="{{ request.route_url('home') }}"></a></li>
+    <li ><a href="{{ request.route_url('rdm') }}">RDM</a></li>
+    <li class="active" style="color: #000000">META</li>
+{% endblock breadcrumbs %}
+
+
+{%- block title -%}
+    Research Data Management - META
+{%- endblock title -%}
+
+{%block page_title %}META{% endblock page_title %}
+{%block page_desc %}META is a toolbox for storing, curating and making available research data using MySQL databases as data repositories.{% endblock page_desc %}
+{%block page_image %}
+    <div style="font-size: 150px;">
+        <i title="RDM" class="fa fa-cogs fa-lg" style="color: #702D3E"></i>
+    </div>
+{% endblock page_image %}
+
+{%- block page_content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>META Docs</h2>
+            <p>How META works?</p>
+            <p><a class="btn btn-default" href="#"  title="Download" role="button">Download &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>InitMETA</h2>
+            <p>Initializes META in a MySQL schema</p>
+            <p><a class="btn btn-default" href="#"  title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>MySQLToFile</h2>
+            <p>Exports a META MySQL schema into different formats like STATA and Excel.</p>
+            <p><a class="btn btn-default" href="$" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>GenSnapshot</h2>
+            <p>Converts a META MySQL schema into a portable SQLite database file for offline cleaning.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>MySQLSync</h2>
+            <p>Synchronizes the changes made in an snapshot file against the data in the server.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>STATAToMySQL</h2>
+            <p>Converts a collection of STATA files into a META MySQL schema.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>STATADataToMySQL</h2>
+            <p>Transfers data from a series of STATA files into a META MySQL schema.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+{% endblock page_content %}

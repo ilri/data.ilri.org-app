@@ -1,0 +1,11 @@
+- Create a Python Virtual Environment with virtualenv
+    virtualenv myVirtualEnv
+- Activate your Virtual Environment
+-   . ./myVirtualEnv/bin/activate
+- Install required libraries
+    pip install -r ./requirements.txt
+- Build the application
+    python setup.py develop
+- Run the application
+    pserve ./development.ini
+

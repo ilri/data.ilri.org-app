@@ -1,8 +1,6 @@
 # data.ilri.org Web Application
 Search application behind the Landing page for ILRI's data resources.
 
-![dataDotILRIApp screenshot](/screenshot.png?raw=true "Screenshot")
-
 You can view the site at [https://data.ilri.org](https://data.ilri.org).
 
 ## Technology

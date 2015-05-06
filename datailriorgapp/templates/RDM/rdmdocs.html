@@ -1,0 +1,40 @@
+{% extends "../page.html" %}
+
+{% block breadcrumbs %}
+    <li><a class="icon-home fa fa-home fa-lg" href="{{ request.route_url('home') }}"></a></li>
+    <li ><a href="{{ request.route_url('rdm') }}">RDM</a></li>
+    <li class="active" style="color: #000000">Documents</li>
+{% endblock breadcrumbs %}
+
+
+{%- block title -%}
+    Research Data Management - Documents
+{%- endblock title -%}
+
+{%block page_title %}RDM documents{% endblock page_title %}
+{%block page_desc %}ILRI's policies and process align with CGIAR standards on Open Access (OA) and RDM.{% endblock page_desc %}
+{%block page_image %}
+    <div style="font-size: 150px;">
+        <i title="RDM" class="fa fa-book fa-lg" style="color: #702D3E"></i>
+    </div>
+{% endblock page_image %}
+
+{%- block page_content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Policy</h2>
+            <p>ILRI's RDM policy</p>
+            <p><a class="btn btn-default" href="https://cgspace.cgiar.org/handle/10568/63496" target="_blank" title="Download" role="button">Download &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Implementation Plan</h2>
+            <p>ILRI's RDM Implementation Plan</p>
+            <p><a class="btn btn-default" href="https://cgspace.cgiar.org/handle/10568/64350" target="_blank" title="Donwload" role="button">Download &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>OA Implementation Plan</h2>
+            <p>ILRI's plan for making data open access.</p>
+            <p><a class="btn btn-default" href="#" title="Coming soon" role="button">Coming soon &raquo;</a></p>
+        </div>
+    </div>
+{% endblock page_content %}

@@ -1,0 +1,51 @@
+{% extends "../page.html" %}
+
+{% block breadcrumbs %}
+    <li><a class="icon-home fa fa-home fa-lg" href="{{ request.route_url('home') }}"></a></li>
+    <li ><a href="{{ request.route_url('rdm') }}">RDM</a></li>
+    <li class="active" style="color: #000000">ODK Tools</li>
+{% endblock breadcrumbs %}
+
+
+{%- block title -%}
+    Research Data Management - ODK Tools
+{%- endblock title -%}
+
+{%block page_title %}ODK Tools{% endblock page_title %}
+{%block page_desc %}ODK Tools is a toolbox for automating ODK data collection and storing data consistently in MySQL databases.{% endblock page_desc %}
+{%block page_image %}
+    <div style="font-size: 150px;">
+        <i title="RDM" class="fa fa-tablet fa-lg" style="color: #702D3E"></i>
+    </div>
+{% endblock page_image %}
+
+{%- block page_content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>ODK Tools Docs</h2>
+            <p>How ODK Tools work?</p>
+            <p><a class="btn btn-default" href="#"  title="Download" role="button">Download &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>ODKToMySQL</h2>
+            <p>Creates a MySQL full relational schema from a ODK Excel definition file.</p>
+            <p><a class="btn btn-default" href="#"  title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>FormHubToJSON</h2>
+            <p>ODKTools uses FormHub as ODK collector. This tool extract submissions as JSON files.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>JSONToMySQL</h2>
+            <p>Imports FormHub JSON files into the MySQL schema created by ODKToMySQL.</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>ODKDataToMySQL</h2>
+            <p>Imports ODK XML data directly into the MySQL schema created by ODKToMySQL. Used to bypass FormHub</p>
+            <p><a class="btn btn-default" href="#" title="More info" role="button">More info &raquo;</a></p>
+        </div>
+{% endblock page_content %}
