@@ -40,4 +40,4 @@ This repository contains the code of:
 
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) which is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html).
 
-Otherwise, the contents of this application is [GPL V2](http://www.gnu.org/copyleft/gpl.html).
+Otherwise, the contents of this application is [GPL V3](http://www.gnu.org/copyleft/gpl.html).
