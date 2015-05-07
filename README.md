@@ -10,6 +10,7 @@ This site was built using:
 
 - [Bootstrap](http://getbootstrap.com/), the HTML, CSS, and JS framework.
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/), the iconic font and CSS toolkit.
+- [Python 2.7.x](https://www.python.org/), a widely used general-purpose programming language.
 - [Pyramid](http://www.pylonsproject.org/), a web application framework for Python.
 - [Jinja2](http://jinja.pocoo.org/), a template engine for the Python programming language.
 - [Fanstatic](http://www.fanstatic.org/), a resource injection framework for Python.
@@ -25,7 +26,7 @@ To build this site for local viewing or development:
     $ python setup.py develop
     $ pserve ./development.ini
 
-The site will then be available on your local machine at: [http://localhost:6543/](http://localhost:6543/). Currently requires Python 2.7.x.
+The site will then be available on your local machine at: [http://localhost:6543/](http://localhost:6543/).
 
 ## License
 This repository contains the code of:
